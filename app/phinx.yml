@@ -15,10 +15,10 @@ environments:
 
     development:
         adapter: mysql
-        host: 198.211.116.51
-        name: dev_supermatehuala
-        user: eunice
-        pass: 'Bere7817#'
+        host: localhost
+        name: supermatehuala
+        user: root
+        pass: root
         port: 3306
         charset: utf8
 

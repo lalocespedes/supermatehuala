@@ -1,6 +1,18 @@
 {
-  "require" : {
-    "moltin/php-sdk" : "dev-version1",
-    "robmorgan/phinx": "^0.4.4"
-  }
+    "autoload":{
+        "psr-4":{
+            "Supermatehuala\\": "app//Supermatehuala"
+        }
+    },
+    "require" : {
+        "robmorgan/phinx": "^0.4.4",
+        "slim/slim": "~2.0",
+        "slim/views": "0.1.*",
+        "twig/twig": "~1.0",
+        "phpmailer/phpmailer": "~5.2",
+        "hassankhan/config": "0.8.*",
+        "illuminate/database": "~5.0",
+        "alexgarrett/violin": "2.*",
+        "ircmaxell/random-lib": "~1.1"
+    }
 }
