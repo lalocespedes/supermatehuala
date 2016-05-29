@@ -8,6 +8,8 @@ use Noodlehaus\Config;
 use RandomLib\Factory as Randomlib;
 
 use Supermatehuala\Products\Products;
+use Supermatehuala\Categories\Categories;
+
 
 
 // set timezone for timestamps etc
@@ -37,4 +39,8 @@ require 'routes.php';
 
 $app->container->set('products', function() {
 	return new Products;
+});
+
+$app->container->set('categories', function() {
+	return new categories;
 });

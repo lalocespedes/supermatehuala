@@ -16,4 +16,9 @@ class Categories extends Eloquent
 		'description'
 	];
 
+	public function products()
+	{
+		return $this->hasMany('Supermatehuala\Products\Products', 'primary_category');
+	}
+
 }

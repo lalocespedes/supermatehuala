@@ -3,7 +3,6 @@
 use Phinx\Migration\AbstractMigration;
 use Phinx\Db\Adapter\MysqlAdapter;
 
-
 class SmProductsMigration extends AbstractMigration
 {
     /**
@@ -39,6 +38,5 @@ class SmProductsMigration extends AbstractMigration
             //->addIndex(array('username', 'email'), array('unique' => true))
             ->create();
     }
-
 
 }

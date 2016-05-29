@@ -1,7 +1,6 @@
 <?php
 
 namespace Supermatehuala\Products;
-use Supermatehuala\Categories;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -19,7 +18,6 @@ class Products extends Eloquent
 
 	public function categories()
 	{
-		$this->Hasmany('Supermatehuala\Categories\categories');
-
+		return $this->hasOne('Supermatehuala\Categories\Categories', 'id');
 	}
 }
